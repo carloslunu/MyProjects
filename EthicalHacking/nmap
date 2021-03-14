@@ -1,0 +1,19 @@
+#Now we will find all the open TCP and UDP Ports.To scan all the TCP ports bassed on NMAP,use the following command->nmap-p 1-65535-T4 192.168.201
+
+#Where the parameter "-p" indicates all the TCP ports that have to be sacanned.In this case,we are scanning all the ports,and "-T4" is the speed of scanning at which NMAP has to run.
+
+#Nmap command to detect OS is,"nmap -O<ip address>
+
+
+------------------------------------------------------------------------
+#NMAP STEALTH SCAN
+->A stealth scan of SYN is also known as a half open scan,as it doesn't complete the TCP three-way handshake.
+->A hacker sends an SYN packet to the target;if an SYN/ACK frame is received back,then it's assumed that the target would complete the connection and the port is listening.
+->If an RST is received back from the target,then it is assumed that the port isn't active or is closed.
+->Use the parameter -sS in NMAP.Following is the full command "nmap -sS-T4 192.168.1.101"
+------------------------------------------------------------------------
+#DNS TOOLS(Dnsenum.pl-)
+->The first tool is dnsenum.pl which is a PERL script that helps to get MX,A,and other records connected to a domain.
+->Type "dnsenum domanin name" and all the records will be shown.
+->The second tool is DNSMAP which helps to find the phone numbers,contacts,and other subdomains connected to this domain that we are searching for.
+

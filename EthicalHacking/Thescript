@@ -1,0 +1,14 @@
+#!/bin/bash
+for ip in seq 1 254;do
+ping -c 1 $1.$ip|grep "64 bytes"|cut-d ""-f 4|
+tr -d ":" &
+done
+#return the ip address in the specified domain range that had responded to  the ping
+#ping->To ping the ip adress
+#-c 1->Ping one p at a time
+#$1.$ip->$1 will be the user.We will input the first three ranges of the IP and the last range will be taken from the for loop.Example:If user input was 192.68.1 then in the first run of for loop $ip will be 1 then in the first run of for loop $ip will be 1.Thus $1.$ip will result in 192.168.1.1 and it will ping this ip.
+#grep "64bytes":"->Try running a ping command to and ip.If the ip responds,the result will be "64bytes from (given_ip)".Thus,if the ip is active,it will respond and the response will contain the term "64bytes".Thus,grep "64bytes" will simply filter out the ip's that responded from a total of 254 ip addresses.
+#cut -d "" -f 4->This command basically does the same thing.It cuts the whole response with the delimiter(-d) whitesapce("")and picks the 4th term(-f 4)from it,that will be the ip.
+#tr -d ":"-Z->Here we pass colon (:) as a delimeter and tr command deletes it.
+#&->This basically allows the thread to work simultaneously.
+#|(pipe):It basically joins all the above commands as a single command

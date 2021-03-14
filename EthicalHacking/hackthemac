@@ -1,0 +1,9 @@
+#Steps to make a MAC SPOOFING: 1.Disable the interface 2.Change the MAC 3.Enable the interface
+
+#REMEMBER:Once we change the MAC address ,it doesn't stay forever,once you restart the system,the original MAC automatically replaces the spoofed one.
+
+#run this on your pc->"ifconfig eth0 down"(Here eth0 is the name of the interfacewe want to change the MAC for
+#Change the MAC->"ifconfig eth0 hw ether 00:11:22:33:44:55"(Here 'hw' stands for hardware interface and '00:11:22:33:44:55' is the fake MAC that we have given to change the MAC.The Mac address will be changed to this given random address.
+
+#Finally,enable the interface:ifconfig eth0 up->Now simply run the command ifconfig and check!The MAC address will be changed...
+
