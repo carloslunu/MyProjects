@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="jugar">Play</string>
+    <string name="nombre_de_usuario">User name</string>
+    <string name="puntuacion_maxima">"Record: "</string>
+    <string name="mi_puntuacion">"My score: "</string>
+    <string name="ir_atr_s">go back</string>
+    <string name="reiniciar">Reset game</string>
+    <string name="nombre">"User player: "</string>
+    <string name="ponelnombre">Put a name if you wanna play</string>
+    <string name="app_name">GameImages</string>
+    <string name="vueltaatras">Back</string>
+</resources>

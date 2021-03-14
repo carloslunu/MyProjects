@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GameImages</string>
+    <string name="jugar">Jugar</string>
+    <string name="nombre_de_usuario">Nom usuari</string>
+    <string name="nombre">"Nom jugador: "</string>
+    <string name="mi_puntuacion">"Puntuació partida: "</string>
+    <string name="vueltaatras">Tornar enrere</string>
+    <string name="reiniciar">Reinicia</string>
+    <string name="puntuacion_maxima">"Record puntuació: "</string>
+    <string name="ponelnombre">Introdueix un nom si vols jugar</string>
+    <string name="volver">Tornar Enrere</string>
+</resources>
